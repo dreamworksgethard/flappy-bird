@@ -74,8 +74,30 @@ body {
   flex-shrink: 0;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.brand-logo {
+  width: clamp(40px, 11vw, 52px);
+  height: clamp(40px, 11vw, 52px);
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 2.5px solid var(--ink);
+  box-shadow: 0 3px 0 rgba(42, 26, 8, 0.25);
+  object-fit: cover;
+  background: #f5c400;
+}
+
+.brand-text {
+  min-width: 0;
+}
+
 .brand h1 {
-  font-size: clamp(1.55rem, 5.5vw, 2.15rem);
+  font-size: clamp(1.45rem, 5.2vw, 2.15rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.02em;
